@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(#68EACC 0%, #497BE8 100%);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.one {
+    width: 38.5vw;
+    height: 650px;
+}
+
+.search-bar {
+    width: 35vw;
+    height: 70px;
+    background-color: #303E4E;
+    border: none;
+    font-size: x-large;
+    padding-left: 15px;
+    color: white;
+}
+
+.plus {
+    width: 6vw;
+    background-color: #8E49E8;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bolder;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.check1box {
+    display: flex;
+    height: 70px;
+    border-bottom: 1px dotted gray;
+    font-size: 25px;
+    font-family: sans-serif;
+    padding-left: 15px;
+    align-items: center;
+    background-color: #FEFEFF;
+    position: relative;
+}
+
+.padding {
+    padding-left: 10px;
+}
+
+.zero {
+    display: flex;
+    width: 38.5vw;
+    padding-top: 20px;
+}
+
+.end {
+    position: absolute;
+    right: 1rem;
+    background-color: #E64E40;
+    color: white;
+    padding: 10px;
+    width: 70px;
+    height: 50px;
+    bottom: .5rem;
+    cursor: pointer;
+}
+
+.one .head {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 23px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer button {
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 5px;
+    background: #8E49E8;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.6;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.footer button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+    .one {
+        width: 80vw;
+        height: 850px;
+    }
+    .zero {
+        display: flex;
+        width: 80vw;
+    }
+    .plus {
+        width: 15vw;
+        background-color: #8E49E8;
+        border: none;
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .search-bar {
+        width: 65vw;
+        height: 70px;
+        background-color: #303E4E;
+        border: none;
+        font-size: large;
+        padding-left: 15px;
+        color: white;
+    }
+    .check1box {
+        display: flex;
+        height: 70px;
+        border-bottom: 1px dotted gray;
+        font-size: 17px;
+        font-family: sans-serif;
+        padding-left: 15px;
+        align-items: center;
+        background-color: #FEFEFF;
+    }
+    .end {
+        position: absolute;
+        right: 1rem;
+        background-color: #E64E40;
+        color: white;
+        padding-top: 15px;
+        width: 50px;
+        /* height: 50px; */
+        /* bottom: .2rem; */
+    }
+    .footer {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 19px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .footer button {
+        padding: 6px 10px;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-weight: 400;
+        font-size: 15px;
+        margin-left: 5px;
+        background: #8E49E8;
+        cursor: pointer;
+        user-select: none;
+        opacity: 0.6;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+}
